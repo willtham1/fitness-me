@@ -1,7 +1,6 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   Card,
   CardContent,
@@ -10,8 +9,25 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { clear } from "console";
+
+import { useState } from "react";
 
 export default function Home() {
+
+  const [counter, setCounter] = useState(0);
+
+  function increaseUp() {
+    setInterval(() => {
+      setCounter((prev) => prev + 1);
+    }, 100);
+  }
+
+  function stopTimer() {
+    setCounter(0);
+  }
+
+
   return (
     <div className="grid grid-cols-3 gap-8">
 
@@ -23,11 +39,11 @@ export default function Home() {
               <CardDescription>Press start to begin workout</CardDescription>
             </CardHeader>
             <CardContent>
-              {(new Date().toLocaleTimeString())}
+              {counter}
             </CardContent>
             <CardFooter>
-              <Button className="w-1/2 m-1">GO!</Button>
-              <Button className="w-1/2 m-1" variant="destructive">STOP!</Button>
+              <Button className="w-1/2 m-1" onClick={increaseUp}>GO!</Button>
+              <Button className="w-1/2 m-1" variant="destructive" onClick={stopTimer}>STOP!</Button>
             </CardFooter>
           </Card>
         </div>
