@@ -1,0 +1,30 @@
+{
+    "workout": "Chest",
+    "exercises": [
+        {
+            "name": "Bench Press",
+            "sets": 4,
+            "reps": 8
+        },
+        {
+            "name": "Incline Bench Press",
+            "sets": 4,
+            "reps": 8
+        },
+        {
+            "name": "Decline Bench Press",
+            "sets": 4,
+            "reps": 8
+        },
+        {
+            "name": "Dumbbell Flyes",
+            "sets": 4,
+            "reps": 8
+        },
+        {
+            "name": "Cable Crossover",
+            "sets": 4,
+            "reps": 8
+        }
+    ]
+}

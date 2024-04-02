@@ -31,6 +31,7 @@ import {
 import { clear } from "console";
 import { useEffect, useState } from "react";
 import WorkoutSet from "@/components/workout-set";
+import { Dashboard } from "@/components/dashboard";
 
 // This syntax is saying that I don't know
 // what keys their will be in the object,
@@ -90,6 +91,7 @@ export default function Home() {
 
   return (
     <div>
+      <Dashboard/>
       <div className="w-full">
         <div>
           <Card className="flex flex-col justify-between">
