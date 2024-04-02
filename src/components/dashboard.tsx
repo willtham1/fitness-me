@@ -1,14 +1,10 @@
 import Link from "next/link"
 import {
-  Activity,
   ArrowUpRight,
   CircleUser,
-  CreditCard,
-  DollarSign,
   Menu,
   Package2,
   Search,
-  Users,
   Dumbbell,
   ChefHat,
   CalendarCheck,
@@ -16,12 +12,6 @@ import {
   Medal
 } from "lucide-react"
 
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -59,7 +49,7 @@ export function Dashboard() {
             className="flex items-center gap-2 text-lg font-semibold md:text-base"
           >
             <Medal className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
+            <span className="sr-only">Fitness Me</span>
           </Link>
           <Link
             href="#"
@@ -92,7 +82,7 @@ export function Dashboard() {
                 className="flex items-center gap-2 text-lg font-semibold"
               >
                 <Package2 className="h-6 w-6" />
-                <span className="sr-only">Acme Inc</span>
+                <span className="sr-only">Fitness Me</span>
               </Link>
               <Link href="#" className="hover:text-foreground">
                 Dashboard
@@ -128,7 +118,6 @@ export function Dashboard() {
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Settings</DropdownMenuItem>
-              <DropdownMenuItem>Support</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Logout</DropdownMenuItem>
             </DropdownMenuContent>
